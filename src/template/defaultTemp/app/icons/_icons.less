@@ -1,0 +1,18 @@
+/*
+ * icons
+ * 新增字体图标文件后(如add)，在@icons变量里新增图标名称，然后重跑webpack
+ * PS：需要重跑webpack是icon-font-loader插件没有更新index.html中字体文件的hash，这个bug如果解决了就不需要重跑webpack了
+ * 方式一：<i className='icn-add' />
+ * 方式二：<i className='xxx' /> .xxx {icon-font: url('icons/add.svg');}
+ * 
+ */
+@icons: logo;
+
+.iconFont(@list, @i: 1) when (@i <= length(@list)) {
+  @icon: extract(@list, @i);
+  .icn-@{icon}:before {
+    icon-font: url('icons/@{icon}.svg');
+  }
+  .iconFont(@list, @i + 1);
+}
+.iconFont(@icons);

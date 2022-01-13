@@ -1,0 +1,26 @@
+{
+  "name": "test-create-cli",
+  "version": "1.0.0",
+  "description": "create-cli",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "huyuan",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bbhu-y/test-cli.git"
+  },
+  "bin": {
+    "test-edt-create-app": "./src/bin/create.js"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^8.2.0",
+    "fs-extra": "^10.0.0",
+    "handlebars": "^4.7.7",
+    "inquirer": "^8.2.0",
+    "log-symbols": "^5.0.0"
+  }
+}
