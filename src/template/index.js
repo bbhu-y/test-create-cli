@@ -103,6 +103,7 @@ function init (projectName) {
   }else if(!!projectName && fs.existsSync(projectName)){
     loggerError(projectName+'项目已存在')
   }else{
+    console.log('\n')
     console.log('>edt-create-app  init')
     console.log('\n')
     createQuestion().then((res) => {
