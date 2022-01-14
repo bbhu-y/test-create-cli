@@ -1,6 +1,6 @@
 {
   "name": "test-create-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "create-cli",
   "main": "index.js",
   "scripts": {
@@ -13,7 +13,7 @@
     "url": "https://github.com/bbhu-y/test-cli.git"
   },
   "bin": {
-    "test-edt-create-app": "./src/bin/create.js"
+    "edt-create-app": "./src/bin/create.js"
   },
   "dependencies": {
     "chalk": "^4.1.2",
